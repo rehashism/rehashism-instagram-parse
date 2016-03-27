@@ -35,17 +35,13 @@ end
 get "/nav" do
   html =
   """
-
     <h1>Ruby Instagram Gem Sample Application</h1>
 
     <ol>
-      <1i><a href='/parse_data'>Go Parsing</a></li>
+      <li><a href='/parse_data'>Go Parsing</a></li>
+      <li><a href='/view_test'>Go Image View</a></li>
+      <li><a href='/get_json'>Get JSON Data</a></li>
     </ol>
-
-    <ol>
-      <1i><a href='/view_test'>Go Image View</a></li>
-    </ol>
-
   """
 
   html
@@ -100,6 +96,10 @@ get "/view_test" do
   end
 
   html
+end
+
+get "/get_json" do
+  send_file "./data.json", :filename => "data.json", :type => 'Application/octet-stream'
 end
 
 def store_name(item)

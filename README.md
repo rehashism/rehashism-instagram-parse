@@ -18,4 +18,11 @@ Run sinatra server:
 ruby parse.rb -p YOUR_PORT -o YOUR_SERVER
 ````
 
-
+## JSON Data
+[
+  {
+    "storeName" : "name",
+    "imgUrl" : "url",
+  },
+  ...
+]

@@ -6,6 +6,11 @@ Install 'sinatra' gem:
 gem install sinatra
 ````
 
+Install 'instagram' gem:
+````
+ gem install instagram
+````
+
 ## instagram Configurations
 Go [Instagram Developer
 Page](https://www.instagram.com/developer/clients/manage/).
